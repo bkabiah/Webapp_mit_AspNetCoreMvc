@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> ueber uns ...</title>
+<meta name="description" content="A lynda.com example of HTML5 and CSS3">
+<meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
+<!--make sure mobile devices display the page at the proper scale	-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="/css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
+</head>
+<body class="no-js">
+<div id="wrapper">
+  <header id="mainHeader"> <a href="/" title="home" class="logo">
+   <!-- I need this div because IE is an affront to mankind-->
+    <div id="logo">
+    <h1>EntdeckenMusterRegion</h1>
+    </div>
+    </a>
+    <nav id="siteNav">
+      <h1>Wo möchten sie hin</h1>
+      <ul>
+       <li><a href="/tours.htm" title="Our tours">Touren <br /><span class="tagline">verfolgen</span></a>
+          <ul>
+            <li><a href="/tours.htm" title="Our tours">Alle Touren</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren nach Activitäten</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren nach Region</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren Finder</a></li>
+          </ul>
+        </li>
+        <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">was uns ausmachen?</span></a></li>
+        <li><a href="resources.htm" title="planning resources">Ressourcen <br /><span class="tagline">Reise Planen</span></a>
+          <ul>
+            <li><a href="resources/faq.htm" title="Got questions?">Touren FAQs</a></li>
+            <li><a href="resources/additional_resources.htm" title="additional resources">Touren Informationen</a></li>
+            <li><a href="resources/terms.htm" title="terms and conditions">Seite Regeln</a></li>
+          </ul>
+        </li>
+        <li><a href="explorers.htm" title="Our community">Explorer <br /><span class="tagline">Unsere community beitreten </span></a>
+          <ul>
+            <li><a href="explorers/join.htm" title="join our community"> Zum Explorer</a></li>
+            <li><a href="/blog" title="read our blog!">Unsere Blog lesen</a></li>
+            <li><a href="explorers/gallery.htm" title="contributor photos">Touren Fotos</a></li>
+            <li><a href="_video/EC_podcast_full version.mov" title="check out our podcast">Video podcast</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.htm" title="contact us" class="current">Contact <br /><span class="tagline">wir hören zu</span></a>
+          <ul>
+            <li><a href="support.htm" title="need help?">Support</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="mainContent">
+  <header id="contentHeader" class="hasCrumbs">
+  <h1>Contact </h1>
+  <div id="subLinks">
+  		<ul>
+            <li><a href="support.htm" title="need help?">Support</a></li>
+          </ul>
+      </div>
+  </header>
+ <article id="mainArticle"> <h1>Uns Kontakieren</h1>
+ <img src="/images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+ <div class="multiCol">
+   <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well. </p>
+   <h2>Support options</h2>
+   <p>If you're currently on a tour and need support, please visit our <a href="support.htm">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
+</div>
+<form id="frmContact" name="frmContact" method="post" action="contact_process.htm">
+          <fieldset id="personalInfo">
+            <legend><strong>Personal Information</strong></legend>
+            <p>
+              <label for="name">Name</label>
+              <input name="name" type="text" class="text" id="name" tabindex="100" placeholder="first and last name" required>
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input name="email" type="email" class="text" id="email" tabindex="110" placeholder="valid email address"  required>
+            </p>
+            <p>
+              <label for="phone">Telefon</label>
+              <input name="phone" type="tel" class="text" id="phone" tabindex="130" placeholder="optional phone number">
+            </p>
+            <p>
+              <label for="address">Addresse</label>
+              <input name="address" type="text" class="text" id="address" tabindex="140" required>
+            </p>
+            <p>
+              <label for="state">State</label>
+              <select name="state" id="state" tabindex="150">
+                <option value="AL">MusterLand1</option>
+                <option value="AK">Musterland2</option>
+                <option value="AZ">Musterland3</option>
+                <option value="AR">Musterland4</option>
+                <option value="CA">Musterland5</option>
+                <option value="CO">Musterland6</option>
+               
+              </select>
+            </p>
+            <p>
+              <label for="zip">PlZ</label>
+              <input name="zip" type="text" class="text" id="zip" tabindex="160">
+            </p>
+          </fieldset>
+          <fieldset id="generalInfo">
+            <legend><strong>Allgemeine Informationen</strong></legend>
+            <p> Mehr informationen</p>
+            <div class="col1">
+              <p>
+<input type="checkbox" name="backpack" id="backpack" tabindex="170">
+              <label for="backpack">Backpack Cal</label>
+</p>
+              <p>
+<input type="checkbox" name="calm" id="calm" tabindex="180">
+              <label for="calm">Musterregion Calm</label>
+</p>
+              <p>
+<input type="checkbox" name="hotsprings" id="hotsprings" tabindex="190">
+              <label for="hotsprings">MusterRegion Hotsprings</label>
+</p>
+            </div>
+            <div class="col2">
+              <p>
+<input type="checkbox" name="cycle" id="cycle" tabindex="210">
+              <label for="cycle">Fahrrad MusterRegion</label>
+</p>
+             <p>
+ <input type="checkbox" name="desert" id="desert" tabindex="220">
+              <label for="desert">von Land zur Meer</label>
+</p>
+             <p>
+ <input type="checkbox" name="kids" id="kids" tabindex="230">
+              <label for="kids">Kids MusterRegion</label>
+</p>
+            </div>
+            <div class="col3">
+              <p>
+<input type="checkbox" name="nature" id="nature" tabindex="240">
+              <label for="nature">Nature </label>
+</p>
+              <p>
+<input type="checkbox" name="snowboard" id="snowboard" tabindex="250">
+              <label for="snowboard">Snowboard MusterRegion</label>
+</p>
+             <p>
+ <input type="checkbox" name="taste" id="taste" tabindex="260">
+              <label for="taste">Taste  MusterRegion</label>
+</p>
+            </div>
+            <p class="clearBoth">
+         <label for="tripDate" class="inline">Wann ein Tour?</label><br />
+        <input type="date" name="tripDate" id="tripDate" tabindex="265">
+            </p>
+            <p class="clearBoth">
+              <label for="comments">Kommentaren</label><br />
+              <textarea name="comments2" id="comments" cols="45" rows="5" tabindex="270"></textarea>
+            </p>
+            <p>Would you like to receive our monthly tour specials newsletter? No, we don't spam or share your information with anyone else. Read our <a href="privacy.htm">privacy policy</a>.</p>
+            <p>
+              <input type="radio" name="newsletter" id="newsletter_yes" value="yes" tabindex="280">
+              <label for="newsletter_yes" class="inline break">Bitte Info Senden!</label>
+               <input type="radio" name="newsletter" id="newsletter_no" value="no" tabindex="290" checked>
+              <label for="newsletter_no" class="inline">Danke!</label>
+            </p>
+            <p>
+              <input type="submit" name="submit2" id="submit2" value="Send" tabindex="300">
+            </p>
+          </fieldset>
+        </form>
+ </article>
+ </section>
+  <aside id="secondaryContent">
+  <div id="specials" class="callOut">
+        <h1>Angegot des Monats</h1>
+        <h2 class="top"><img src="/images/calm_bug.gif" alt="California Calm" width="75" height="75" />MusterRegion Calm</h2>
+        <p>Tages spe <br />
+          <a href="/tours/tour_detail_cycle.htm">euro250</a></p>
+        <h2><img src="/images/desert_bug.gif" alt="From desert to sea" width="75" height="75" />von Land zur Meer</h2>
+        <p>2 Tagen Meer <br />
+          <a href="/tours/tour_detail_cycle.htm">euro350</a></p>
+        <h2><img src="/images/backpack_bug.gif" alt="Backpack Cali" width="75" height="41" />Backpack Cali</h2>
+        <p>Big Sur Retreat <br />
+          <a href="/tours/tour_detail_cycle.htm">euro620</a></p>
+          <h2><img src="/images/taste_bug.gif" alt="Taste of California" width="75" height="75" />Taste of California</h2>
+        <p>Tapas &amp; Groves <br />
+          <a href="/tours/tour_detail_taste.htm">euro150</a></p>
+      </div>
+      <div id="trivia" class="callOut">
+        <h1>Wissen sie das?</h1>
+          <p>California is home to many natural hot springs, which contain a high mineral content that is considered therapeutic. Calistoga is probably our most famous example but many day spas have hot tubs and water treatments that mimic these conditions.</p>
+        </div>
+  </aside>
+  <footer id="pageFooter">
+  <section id="quickLinks">
+  <h1>Quick Nav</h1>
+    <ul id="quickNav">
+      <li><a href="/" title="Our home page">Home</a></li>
+      <li><a href="/tours.htm" title="Explore our tours">Touren</a></li>
+      <li><a href="mission.htm" title="What we think">Mission</a></li>
+      <li><a href="resources.htm" title="Guidance and planning">Ressourcen</a></li>
+      <li><a href="explorers.htm" title="Join our community">Explorer</a></li>
+      <li><a href="contact.htm" title="Contact and support">Contact</a></li>
+    </ul>
+    </section>
+  <section id="footerResources">
+  <h1>Ressourcen</h1>
+    <ul id="quickNav">
+      <li><a href="resources/faq.htm" title="Our home page">FAQ</a></li>
+      <li><a href="support.htm" title="Need help?">Support</a></li>
+      <li><a href="resources/legal.htm" title="The fine print">Legal</a></li><li><a href="login.htm">Login</a></li>
+    </ul>
+  </section>
+  <section id="companyInfo">
+  <h1>Contact</h1>
+  <h2>EntdeckenMusterRegion</h2>
+      <p>musterstrasse 5<br />
+        5462, MusterLand</p>
+      <p>0151.555.4310<br />0151.555.4315 <em>(24/24 support)</em></p>
+  </section>
+  </footer>
+</div>
+</body>
+</html>

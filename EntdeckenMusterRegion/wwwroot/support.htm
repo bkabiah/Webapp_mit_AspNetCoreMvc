@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>...</title>
+<meta name="description" content="A lynda.com example of HTML5 and CSS3">
+<meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
+<!--make sure mobile devices display the page at the proper scale	-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="/css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
+</head>
+<body class="no-js">
+<div id="wrapper">
+  <header id="mainHeader"> <a href="/" title="home" class="logo">
+   <!-- I need this div because IE is an affront to mankind-->
+    <div id="logo">
+    <h1>EntdeckenMusterRegion</h1>
+    </div>
+    </a>
+    <nav id="siteNav">
+      <h1>Wo möchten sie hin?</h1>
+      <ul>
+       <li><a href="/tours.htm" title="Our tours">Touren <br /><span class="tagline">verfolgen</span></a>
+          <ul>
+            <li><a href="/tours.htm" title="Our tours">Alle Touren</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren nach Activitäten</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren nach Region</a></li>
+            <li><a href="/tours.htm" title="find tours">Touren Finder</a></li>
+          </ul>
+        </li>
+        <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">was uns ausmachen?</span></a></li>
+        <li><a href="resources.htm" title="planning resources">Ressourcen <br /><span class="tagline">Reisen planen</span></a>
+          <ul>
+            <li><a href="resources/faq.htm" title="Got questions?">Touren FAQs</a></li>
+            <li><a href="resources/additional_resources.htm" title="additional resources">Touren Informationen</a></li>
+            <li><a href="resources/terms.htm" title="terms and conditions">Seite Regeln</a></li>
+          </ul>
+        </li>
+        <li><a href="explorers.htm" title="Our community">Explorer <br /><span class="tagline">unsere community beitreten</span></a>
+          <ul>
+            <li><a href="explorers/join.htm" title="join our community">zum Explorer</a></li>
+            <li><a href="/blog" title="read our blog!">Unsere Blog lesen</a></li>
+            <li><a href="explorers/gallery.htm" title="contributor photos">Touren fotos</a></li>
+            <li><a href="_video/EC_podcast_full version.mov" title="check out our podcast">Video podcast</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.htm" title="contact us" class="current">Contact <br /><span class="tagline">wir hören zu</span></a>
+          <ul>
+            <li><a href="support.htm" title="need help?">Support</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="mainContent">
+  <header id="contentHeader">
+  <h1>Support Options</h1>
+  </header>
+ <article id="mainArticle"> <h1>Benötigen sie Hilfe?</h1>
+ <img src="/images/cyclist.jpg" alt="Biking along with Cycle California" class="articleImage" />
+   <p> Unsere assistanz Option. </p>
+   <section id="supportOptions">
+        <h2>Hilfe? options:</h2>
+        <p> 24/24: <strong>0151.555.4315</strong></p>
+        <p> 24/24 chat support: <a href="contact/chat.htm">Chat Mitarbeiter</a></p>
+        <h2> Don't need us right away?</h2>
+        <p>Im Notfall </p>
+      </section>
+      <form id="frmSupport" name="frmSupport" method="post" action="support_process.htm">
+        <fieldset id="quickSupport">
+          <legend><strong>Quick Support</strong></legend>
+ 			<p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" tabindex="10" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" tabindex="20" required>
+          </p>
+           <p>
+            <label for="phone">Mobile:</label>
+            <input type="tel" name="phone" id="phone" tabindex="25">
+          </p>
+          <p>
+            <label for="tourID">Tour Name:</label>
+            <input type="text" name="tourID" id="tourID" tabindex="30">
+          </p>
+          <p>Tour Status:<br />
+            <label class="inline">
+              <input type="radio" name="/tourstatus" value="booked" id="/tourstatus_0" tabindex="40" />
+              Ich habe ein  tour eingebucht </label>
+            <label class="inline"><br />
+              <input type="radio" name="/tourstatus" value="current" id="/tourstatus_1" tabindex="50" />
+              Auf ein  tour</label>
+          </p>
+          <p>
+            <label for="comments">Kommentaren </label>
+            <br />
+            <textarea name="comments" id="comments" cols="45" rows="5" tabindex="60"></textarea>
+          </p>
+          <p>
+            <input type="submit" name="submit" id="submit" value="Send" tabindex="70" />
+          </p>
+        </fieldset>
+      </form>
+ </article>
+ </section>
+  <aside id="secondaryContent">
+<div id="specials" class="callOut">
+        <h1>Angebot des Monats</h1>
+        <h2 class="top"><img src="/images/calm_bug.gif" alt="California Calm" width="75" height="75" />MusterRegion Calm</h2>
+        <p>Tages Spe <br />
+          <a href="/tours/tour_detail_cycle.htm">euro250</a></p>
+        <h2><img src="/images/desert_bug.gif" alt="From desert to sea" width="75" height="75" />von Land zu  Meer</h2>
+        <p>2 Tagen Salton Sea <br />
+          <a href="/tours/tour_detail_cycle.htm">euro350</a></p>
+        <h2><img src="/images/backpack_bug.gif" alt="Backpack Cali" width="75" height="41" />Backpack Cali</h2>
+        <p>Big Sur Retreat <br />
+          <a href="/tours/tour_detail_cycle.htm">euro620</a></p>
+          <h2><img src="/images/taste_bug.gif" alt="Taste of California" width="75" height="75" />Taste MusterRegion</h2>
+        <p>Tapas &amp; Groves <br />
+          <a href="/tours/tour_detail_taste.htm">euro150</a></p>
+      </div>
+      <div id="trivia" class="callOut">
+        <h1>wissen sie das?</h1>
+          <p>MusterRegion hat viele.....</p>
+        </div>
+  </aside>
+  <footer id="pageFooter">
+  <section id="quickLinks">
+  <h1>Quick Nav</h1>
+    <ul id="quickNav">
+      <li><a href="/" title="Our home page">Home</a></li>
+      <li><a href="/tours.htm" title="Explore our tours">Touren</a></li>
+      <li><a href="mission.htm" title="What we think">Mission</a></li>
+      <li><a href="resources.htm" title="Guidance and planning">Ressourcen</a></li>
+      <li><a href="explorers.htm" title="Join our community">Explorer</a></li>
+      <li><a href="contact.htm" title="Contact and support">Contact</a></li>
+    </ul>
+    </section>
+  <section id="footerResources">
+  <h1>Ressourcen</h1>
+    <ul id="quickNav">
+      <li><a href="resources/faq.htm" title="Our home page">FAQ</a></li>
+      <li><a href="support.htm" title="Need help?">Support</a></li>
+      <li><a href="resources/legal.htm" title="The fine print">Legal</a></li><li><a href="login.htm">Login</a></li>
+    </ul>
+  </section>
+  <section id="companyInfo">
+  <h1>Contact</h1>
+  <h2>MusterRegion</h2>
+      <p>musterstrasse 5<br />
+        9654,Musterland</p>
+      <p>0151.555.4310<br />0151.555.4315 <em>(24/24 support)</em></p>
+  </section>
+  </footer>
+</div>
+</body>
+</html>

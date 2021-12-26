@@ -1,0 +1,142 @@
+@addTagHelper *, EndeckenMusterRegion
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Explore California</title>
+    <meta name="description" content="A lynda.com example of HTML5 and CSS3">
+    <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
+    <!--make sure mobile devices display the page at the proper scale	-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
+</head>
+<body id="home" class="no-js">
+    <div id="wrapper">
+        <header id="mainHeader">
+            <a href="/" title="home" class="logo">
+                <!-- I need this div because IE is an affront to mankind-->
+                <div>
+                    <h1>EntdeckenMusterRegion</h1>
+                </div>
+            </a>
+            <nav id="siteNav">
+                <h1>Wo möchten sie hin?</h1>
+                <ul>
+                    <li>
+                        <a href="/tours.htm" title="Our tours">Touren <br /><span class="tagline">verfolgen</span></a>
+                        <ul>
+                            <li><a href="/tours.htm" title="Our tours">Alle Touren</a></li>
+                            <li><a href="/tours.htm" title="find tours">Touren nach Activitäten</a></li>
+                            <li><a href="/tours.htm" title="find tours">Touren nach Region</a></li>
+                            <li><a href="/tours.htm" title="find tours">Touren Finder</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">Was uns ausmachen?</span></a></li>
+                    <li>
+                        <a href="resources.htm" title="planning resources">Ressourcen <br /><span class="tagline">Reise planen</span></a>
+                        <ul>
+                            <li><a href="resources/faq.htm" title="Got questions?">Touren FAQs</a></li>
+                            <li><a href="resources/additional_resources.htm" title="additional resources">Touren Informationen</a></li>
+                            <li><a href="resources/terms.htm" title="terms and conditions">Seite Regeln</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="explorers.htm" title="Our community">Explorer <br /><span class="tagline">Unsere community beitreten</span></a>
+                        <ul>
+                            <li><a href="explorers/join.htm" title="join our community">zum Explorer</a></li>
+                            <li><a href="@Url.Action("Index", "Blog")" title="read our blog!">Unser Blog lesen</a></li>
+                            <li><a href="explorers/gallery.htm" title="contributor photos">Touren fotos</a></li>
+                            <li><a href="_video/EC_podcast_full version.mov" title="check out our podcast">Video podcast</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">wir hören zu</span></a>
+                        <ul>
+                            <li><a href="support.htm" title="need help?">Support</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <form id="logout" action="@Url.Action("Logout", "Account")" method="POST">
+                                <a href="javascript: $('#logout').submit()" class="last">
+                                    Logout
+                                    <br /><span class="tagline">@User.Identity.Name</span>
+                                </a>
+                            </form>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "Account")" title="log in" class="last">
+                                Login
+                            </a>
+                        }
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="actionCall">
+            @if (IsSectionDefined("header"))
+            {
+                @RenderSection("header", false)
+            }
+            else
+            {
+                <h1>Explore our world your way</h1>
+            }
+        </section>
+        <div id="contentWrapper">
+            <section id="mainContent">
+                @RenderBody()
+            </section>
+            <aside id="secondaryContent">
+                <div id="specials" class="callOut">
+                    <vc:monthly-specials />
+                </div>
+                <div id="trivia" class="callOut">
+                    <h1>wissen sie das?</h1>
+                    <p>Musterland hat...!</p>
+                </div>
+            </aside>
+        </div>
+        <footer id="pageFooter">
+            <section id="quickLinks">
+                <h1>Quick Nav</h1>
+                <ul id="quickNav">
+                    <li><a href="/" title="Our home page">Home</a></li>
+                    <li><a href="/tours.htm" title="Explore our tours">Touren</a></li>
+                    <li><a href="mission.htm" title="What we think">Mission</a></li>
+                    <li><a href="resources.htm" title="Guidance and planning">Ressourcen</a></li>
+                    <li><a href="explorers.htm" title="Join our community">Explorer</a></li>
+                    <li><a href="contact.htm" title="Contact and support">Contact</a></li>
+                </ul>
+            </section>
+            <section id="footerResources">
+                <h1>Ressourcen</h1>
+                <ul id="quickNav">
+                    <li><a href="resources/faq.htm" title="Our home page">FAQ</a></li>
+                    <li><a href="support.htm" title="Need help?">Support</a></li>
+                    <li><a href="resources/legal.htm" title="The fine print">Legal</a></li>
+                    <li><a href="login.htm">Login</a></li>
+                </ul>
+
+                <p>
+                    Copyright Behezi kabiah @DateTime.Now.Year
+                </p>
+            </section>
+            <section id="companyInfo">
+                <h1>Contact</h1>
+                <h2>EntdeckenMusterRegion</h2>
+                <p>
+                    musterstrasse 5<br />
+                    98542, Musterland
+                </p>
+                <p>0151.555.4310<br />0151.555.4315 <em>(24/24 support)</em></p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
